@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Table of Contents
+1) Overview
+2) Dependencies
+3) Components
+4) Pages
+5) APIs Used
+6) Setup Instructions
+7) Deployed Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Overview
+The Contact Management App is a web application built using ReactJS, TypeScript, TailwindCSS, React Router v6, and React Query (Tanstack Query). The app features a contact management system and a dashboard displaying charts and maps with COVID-19 data.
 
-In the project directory, you can run:
 
-### `npm start`
+# Dependencies
+- React: Frontend library
+- TypeScript: Type checking
+- TailwindCSS: Styling
+- React Router v6: Routing
+- React Query (Tanstack Query): Data fetching
+- Axios: HTTP client for API requests
+- React-Leaflet: Map integration
+- Chart.js: Charting library
+- Material UI : UI icons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Components
+- 'ContactForm' : The ContactForm component is used for adding a new contact.
+- 'Edit_Contact' : The EditContact component is used for editing an existing contact.
+- 'Popup' : The Popup component displays a popup dialog for contact details.
+- 'SideBar' : The SideBar component displays a sidebar with navigation links
+- 'WorldMap' : The WorldMap component displays a map with COVID-19 data for each country.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Pages
+- 'AllRoutes' : The AllRoutes component handles routing for the application.
+- 'Charts and Maps' : The Charts and Maps page displays a chart and a map with COVID-19 statistics.
+- 'Contacts' : The Contacts page displays a list of contacts and allows for adding, editing, and deleting contacts.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# APIs Used
+The app uses the following APIs to fetch data:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- World wide data of cases: https://disease.sh/v3/covid-19/all
+- Country Specific data of cases: https://disease.sh/v3/covid-19/countries
+- Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Installation and Setup
+To run this app, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Clone this repository: git clone https://github.com/your-username/contact-management-app.git
+- Install the dependencies: npm install
+- Start the app: npm start
+- The app should open in your default browser at http://localhost:3000/.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Deployed Link : - 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
